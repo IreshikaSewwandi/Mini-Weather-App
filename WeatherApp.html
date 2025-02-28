@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Weather App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>Weather App</h1>
+      <p>Get real-time weather updates for your favorite cities</p>
+    </header>
+    <main><table><td>
+      <div class="button-container">
+        <button onclick="fetchWeather('New York')">New York</button>
+        <button onclick="fetchWeather('London')">London</button>
+        <button onclick="fetchWeather('Tokyo')">Tokyo</button>
+        <button onclick="fetchWeather('Colombo')">Colombo</button>
+        <button onclick="fetchWeather('Dubai')">Dubai</button>
+      </div></td>
+    <td>
+      <div id="weather-container">
+        <!-- Weather details will be dynamically displayed here -->
+      </div>
+    </td>
+    </table>
+    </main>
+    <footer>
+      <p>Powered by OpenWeatherMap API</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
